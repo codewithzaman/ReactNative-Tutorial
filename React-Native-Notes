@@ -1,5 +1,9 @@
-What is React Native ?
+>>>What is React Native ?
 React is a library used for creating Ui.
 React is agnostic. react DOM is used to render the browser.
 React native is a library that can compile react components into Native Components.
 React native Allow us to use react to create native ios and android applications
+>>> Single Code Base :
+Usually, an ios app and android app are completley separate apps(Kotlin and swift)
+With react native we can create single codebase and build for both plateforms.
+This saves time and money
