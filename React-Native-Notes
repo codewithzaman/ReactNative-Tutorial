@@ -13,3 +13,11 @@ Windows - android
 ios - Latest Xcode and ios Simulator 
 android - Android Studio / SDK / Emulator (AVD)
 
+>>> React- Native Components :
+RN includes built in components and APIs
+Basic Components : View,Text,Image,Textinput,ScrollView,StyleSheet,
+UI : Button, Picker,Slider,Switch
+ListViews: FlatList ,SectionList
+iOs : ActionSheetIOS , AlertIOS
+Android: BackHandler , DatePickerAndroid 
+
