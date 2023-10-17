@@ -7,3 +7,9 @@ React native Allow us to use react to create native ios and android applications
 Usually, an ios app and android app are completley separate apps(Kotlin and swift)
 With react native we can create single codebase and build for both plateforms.
 This saves time and money
+>>> Requirements :
+Mac - ios/android
+Windows - android 
+ios - Latest Xcode and ios Simulator 
+android - Android Studio / SDK / Emulator (AVD)
+
