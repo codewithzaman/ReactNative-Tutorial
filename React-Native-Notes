@@ -1,0 +1,5 @@
+What is React Native ?
+React is a library used for creating Ui.
+React is agnostic. react DOM is used to render the browser.
+React native is a library that can compile react components into Native Components.
+React native Allow us to use react to create native ios and android applications
