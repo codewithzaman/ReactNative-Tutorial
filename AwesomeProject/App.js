@@ -1,10 +1,22 @@
-import { View, Text,StyleSheet } from 'react-native'
-import React from 'react'
+import { View, Text,StyleSheet,FlatList } from 'react-native'
+import React,{useState} from 'react'
+import Header from './components/Header'
+import { uuid } from 'uuidv4'
 
 export default function App() {
+  const [items,setItems] = useState([
+    {id:uuid(),text:'Milk'},
+    {id:uuid(),text:'Eggs'},
+    {id:uuid(),text:'Bread'},
+    {id:uuid(),text:'Juice'},
+])
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hello World</Text>
+      <Header title='Shopping List'/>
+      <FlatList data={items}
+      renderItem={({item})=>{
+        <Text>{item.text}</Text>
+      }}/>
     </View>
   )
 
@@ -12,11 +24,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container :{
     flex:1,
-    justifyContent:'center',
-    alignItems:'center',
+    paddingTop:60,
+    // justifyContent:'center',
+    // alignItems:'center',
   },
-  text:{
-    color:'darkslateblue',
-    fontSize:30
-  }
+  // text:{
+  //   color:'darkslateblue',
+  //   fontSize:30
+  // }
 })

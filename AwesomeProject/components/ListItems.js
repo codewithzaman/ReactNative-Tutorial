@@ -1,12 +1,14 @@
-import { View, Text,StyleSheet } from 'react-native'
+import { View, Text,StyleSheet,TouchableOpacity } from 'react-native'
 import React,{useState} from 'react'
 
-export default function Header({title}) {
+export default function ListItems({item}) {
     
   return (
-    <View style={styles.header}>
-      <Text style={styles.text}>{title}</Text>
-    </View>
+    <TouchableOpacity style={styles.listitems}>
+        <View style={styles.listitemsview}>
+        <Text style={styles.listitemstext}>{item.text}</Text>
+        </View>
+    </TouchableOpacity>
   )
 
 }
